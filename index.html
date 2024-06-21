@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautySkin - スキンケア製品専門店</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .product {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .product-detail {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product-image {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .product-info {
+            flex: 2;
+        }
+        .product-purchase {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+        button, .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .back-link {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BeautySkin</h1>
+        <p>あなたの肌に最高のケアを</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#products">商品一覧</a></li>
+            <li><a href="#about">当店について</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>おすすめ商品</h2>
+        <div class="product">
+            <h3>モイスチャライジングクリーム</h3>
+            <p>乾燥肌を集中的にケアする高保湿クリーム</p>
+            <p>価格: 3,800円</p>
+            <a href="#moisturizing-cream" class="button">詳細を見る</a>
+            <button>カートに追加</button>
+        </div>
+        <div class="product">
+            <h3>ルミナスセラム</h3>
+            <p>輝くような透明感を叶える、革新的な美容液</p>
+            <p>価格: 6,800円</p>
+            <a href="#luminus-serum" class="button">詳細を見る</a>
+            <button>カートに追加</button>
+        </div>
+    </div>
+
+    <div class="container" id="luminus-serum" style="display: none;">
+        <div class="back-link">
+            <a href="#home">&larr; ホームページに戻る</a>
+        </div>
+        <h2>製品詳細: ルミナスセラム</h2>
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="/api/placeholder/300/300" alt="ルミナスセラム" />
+            </div>
+            <div class="product-info">
+                <h3>ルミナスセラム</h3>
+                <p>輝くような透明感を叶える、革新的な美容液</p>
+                <h4>製品説明</h4>
+                <p>ルミナスセラムは、最先端の科学とナチュラルな植物エキスを融合させた革新的な美容液です。ビタミンC誘導体とナイアシンアミドを高濃度で配合し、肌のくすみやシミにアプローチ。さらに、ヒアルロン酸とセラミドが潤いを与え、なめらかでしっとりとした肌に導きます。</p>
+                <h4>主な特徴</h4>
+                <ul>
+                    <li>ビタミンC誘導体5%配合：肌の透明感を高め、シミを予防</li>
+                    <li>ナイアシンアミド3%配合：毛穴を引き締め、肌のキメを整える</li>
+                    <li>3種のヒアルロン酸：異なる分子量で肌の各層に潤いを届ける</li>
+                    <li>セラミド配合：肌バリア機能を強化し、乾燥を防ぐ</li>
+                    <li>無香料・無着色・ノンコメドジェニック処方</li>
+                </ul>
+                <h4>使用方法</h4>
+                <p>化粧水で肌を整えた後、適量（ポンプ2～3回分）を顔全体になじませます。朝晩の使用をおすすめします。</p>
+            </div>
+        </div>
+        <div class="product-purchase">
+            <h4>ご購入</h4>
+            <p>価格: 6,800円（税込）</p>
+            <p>容量: 30ml</p>
+            <form>
+                <label for="quantity">数量:</label>
+                <select id="quantity" name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <button type="submit">カートに追加</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BeautySkin. All rights reserved.</p>
+    </footer>
+
+    <script>
+    // Simple JavaScript to handle page navigation
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const homeSection = document.getElementById('home');
+        const productSection = document.getElementById('luminus-serum');
+
+        // Function to show home and hide product detail
+        function showHome() {
+            homeSection.style.display = 'block';
+            productSection.style.display = 'none';
+        }
+
+        // Function to show product detail and hide home
+        function showProduct() {
+            homeSection.style.display = 'none';
+            productSection.style.display = 'block';
+        }
+
+        // Set up event listeners for navigation
+        document.querySelector('a[href="#home"]').addEventListener('click', showHome);
+        document.querySelector('a[href="#luminus-serum"]').addEventListener('click', showProduct);
+
+        // Check the hash on page load
+        if(window.location.hash === '#luminus-serum') {
+            showProduct();
+        } else {
+            showHome();
+        }
+    });
+    </script>
+</body>
+</html>
